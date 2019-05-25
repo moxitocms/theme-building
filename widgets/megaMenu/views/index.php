@@ -23,7 +23,7 @@ use yii\web\View;
             <ul class="wsmenu-list">
                 <li class="<?= preg_match('/^catalog/', Yii::$app->request->pathInfo) ? 'active' : '' ?>" id="main-menu-catalog">
                     <a href="<?= Url::to(['/catalog']) ?>" class="navtext vsmenu-cat-toggle">
-                        Каталог препаратов
+                        Каталог проектов
                     </a>
                     <?php if ($this->beginCache('megamenu-dropdown', ['duration' => 86400])): ?>
                     <?= $this->render('_dropdown', [
@@ -70,14 +70,6 @@ use yii\web\View;
                 ?>
                 <li class="<?= $faqIsActive ? 'active' : '' ?>">
                     <a class="navtext" href="<?= Url::to(['/faq']) ?>">Вопрос-ответ</a>
-                </li>
-                <?php
-                $articlesIsActive = preg_match('/^article/', Yii::$app->request->pathInfo);
-                ?>
-                <li class="<?= $articlesIsActive ? 'active' : '' ?>">
-                    <a href="<?= Url::to(['/article']) ?>" class="navtext">
-                        Лечение
-                    </a>
                 </li>
                 <li class="<?= Yii::$app->request->pathInfo === 'contacts' ? 'active' : '' ?>">
                     <a class="navtext" href="<?= Url::to(['/contacts']) ?>">

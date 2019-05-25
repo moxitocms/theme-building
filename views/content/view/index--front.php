@@ -47,7 +47,6 @@ $this->context->layout = '//front';
 
 <div class="content-block content-block--video">
     <div class="container">
-        <div class="title-home">Видео</div>
         <div class="front-page-video-holder">
             <?= Block::widget([
                 'position' => 'front-video',

@@ -25,14 +25,14 @@ use pantera\content\widgets\block\Block;
             <div class="row">
                 <div class="col-md-2 col-lg-3 top-panel__col-logo">
                     <a href="/">
-                        <img src="/images/logo.svg" alt="Индиавир" id="logo" />
+                        <img src="/images/logo.png" alt="КСДВ" id="logo" />
                     </a>
                 </div>
                 <div class="col-md-8 col-lg-6 top-panel__col-contacts">
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="top-panel__label">Главный офис</div>
-                            <div class="top-panel__phone">8 (3812) 208-404
+                            <div class="top-panel__label">Главный офис г. Хабаровск</div>
+                            <div class="top-panel__phone">+7 (4212) 24-24-01
                                 <?= LeadForm::widget([
                                     'key' => 'callMe',
                                     'text' => '<i class="fa fa-phone"></i>',
@@ -41,11 +41,11 @@ use pantera\content\widgets\block\Block;
                                     ],
                                 ]) ?>
                             </div>
-                            <div class="top-panel__address"><a href="/contacts">г. Омск, 8 филиалов</a></div>
+                            <div class="top-panel__address"><a href="/contacts">ул. Промышленная, 20б</a></div>
                         </div>
                         <div class="col-sm-4">
                             <div class="top-panel__label">Бесплатная консультация</div>
-                            <div class="top-panel__phone">+7 (983) 622-24-54
+                            <div class="top-panel__phone">+7 (914) 159-24-01
                                 <?= LeadForm::widget([
                                     'key' => 'callMe',
                                     'text' => '<i class="fa fa-phone"></i>',
@@ -54,12 +54,12 @@ use pantera\content\widgets\block\Block;
                                     ],
                                 ]) ?>
                             </div>
-                            <div class="top-panel__address"><a href="/contacts">indiavirexpress@gmail.com</a></div>
+                            <div class="top-panel__address"><a href="/contacts">ks-dv@list.ru</a></div>
                         </div>
                         <div class="col-sm-4 text-center">
                             <div class="top-panel__instagram">
                                 <div class="top-panel__label">Новости и информация<span class="hidden-md"> в нашем Instagram!</span></div>
-                                <div class="top-panel__instagram-link"><a href="https://www.instagram.com/deniss_smolin/" target="_blank"><i class="fa fa-instagram"></i>deniss_smolin</a></div>
+                                <div class="top-panel__instagram-link"><a href="https://www.instagram.com/ksdv_stroy_khv/" target="_blank"><i class="fa fa-instagram"></i>ksdv_stroy_khv</a></div>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ use pantera\content\widgets\block\Block;
                     <div class="top-panel__buttons">
                         <?= LeadForm::widget([
                             'key' => 'question',
-                            'text' => 'Задать вопрос<span class="hidden-md"> доктору</span>',
+                            'text' => 'Задать вопрос',
                             'options' => [
                                 'class' => 'btn btn-default btn-block text-uppercase',
                             ],
@@ -94,8 +94,8 @@ use pantera\content\widgets\block\Block;
                 </a>
             </div>
             <div class="mobile-contacts">
-                <a class="mobile-contacts__item" href="tel:+73812208404">8 (3812) 208-404</a>
-                <a class="mobile-contacts__item" href="tel:+79836222454">+7 (983) 622-24-54</a>
+                <a class="mobile-contacts__item" href="tel:+74212242401">+7 (4212) 24-24-01</a>
+                <a class="mobile-contacts__item" href="tel:+79141592401">+7 (914) 159-24-01</a>
             </div>
         </div>
     </div>
