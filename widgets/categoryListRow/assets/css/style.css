@@ -1,0 +1,29 @@
+.category-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -15px;
+}
+
+.category-row__item {
+    padding: 0 15px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.category-row__item:after {
+    content: '';
+    border-left: 1px solid #8b93a6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.category-row__item:last-child:after{
+    content: none;
+}
+
+.category-row__item a, .category-row__item a:focus, .category-row__item a:hover {
+    color: #72b805;
+    text-decoration: none;
+}
