@@ -8,8 +8,6 @@
 
 use common\modules\catalog\models\CatalogCategory;
 use frontend\widgets\mainCatalog\MainCatalog;
-use frontend\widgets\portfolioSlider\PortfolioSlider;
-use frontend\widgets\stockOther\StockOther;
 use pantera\content\models\ContentPage;
 use pantera\content\widgets\block\Block;
 use pantera\content\widgets\slider\Slider;
@@ -35,7 +33,6 @@ $this->context->layout = '//front';
         ]) ?>
     </div>
 </div>
-
 <div class="content-block content-block--main-catalog">
     <div class="container">
         <?= MainCatalog::widget([
@@ -54,7 +51,14 @@ $this->context->layout = '//front';
         </div>
     </div>
 </div>
-
+<div class="content-block">
+    <div class="container">
+        <?= LeadForm::widget([
+            'key' => 'calculator',
+            'mode' => LeadForm::MODE_INLINE,
+        ]) ?>
+    </div>
+</div>
 <?php if ($model->body || $model->seo->h1): ?>
     <div class="content-block content-block--frontpage-content">
         <div class="container">

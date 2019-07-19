@@ -2618,7 +2618,7 @@ h2, .h2 {
 }
 
 .owl-dots .owl-dot.active span:after {
-    transform: scale(1,1);   
+    transform: scale(1,1);
     transition: all ease .125s;
 }
 
@@ -2700,7 +2700,7 @@ body.page-front .content-block--main-catalog .btn.btn-primary.btn-lg {
 .field-leadrequest-name,
 .field-leadrequest-phone {
     position: relative;
-} 
+}
 
 .field-leadrequest-date:after,
 .field-leadrequest-name:after,
@@ -2885,4 +2885,24 @@ body.page-front .content-block--main-catalog .btn.btn-primary.btn-lg {
 
 .row > .empty {
     padding: 0 15px;
+}
+
+.checkbox-list__header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.checkbox-list__item {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.checkbox-list__item + .checkbox-list__item {
+    margin-top: 5px;
+}
+
+.checkbox-list__input {
+    display: inline-block !important;
+    margin: 0 5px 0 0 !important;
 }
