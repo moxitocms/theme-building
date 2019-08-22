@@ -2906,3 +2906,10 @@ body.page-front .content-block--main-catalog .btn.btn-primary.btn-lg {
     display: inline-block !important;
     margin: 0 5px 0 0 !important;
 }
+
+.content-block__online-request {
+    background: #f7f7f7;
+    padding-top: 40px !important;
+    padding-bottom: 40px;
+    margin: 40px 0;
+}

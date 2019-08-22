@@ -931,6 +931,15 @@
         width: auto;
     }
 
+    .category__body .image {
+	    float: none;
+	    margin: 30px 0;
+	}
+
+	.category__body .image img {
+	    width: 100%;
+	}
+
 }
 
 @media (max-width: 567px) {

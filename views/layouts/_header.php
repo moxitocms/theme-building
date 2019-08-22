@@ -54,12 +54,12 @@ use pantera\content\widgets\block\Block;
                                     ],
                                 ]) ?>
                             </div>
-                            <div class="top-panel__address"><a href="/contacts">ks-dv@list.ru</a></div>
+                            <div class="top-panel__address"><a href="mailto:ks-dv@list.ru">ks-dv@list.ru</a></div>
                         </div>
                         <div class="col-sm-4 text-center">
                             <div class="top-panel__instagram">
                                 <div class="top-panel__label">Новости и информация<span class="hidden-md"> в нашем Instagram!</span></div>
-                                <div class="top-panel__instagram-link"><a href="https://www.instagram.com/ksdv_stroy_khv/" target="_blank"><i class="fa fa-instagram"></i>ksdv_stroy_khv</a></div>
+                                <div class="top-panel__instagram-link"><a href="https://www.instagram.com/zastroydv/" target="_blank"><i class="fa fa-instagram"></i>zastroydv</a></div>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ use pantera\content\widgets\block\Block;
                                 'class' => 'btn btn-default btn-block text-uppercase',
                             ],
                         ]) ?>
-                        <a class="btn-primary btn btn-block text-uppercase" href="/zapis-online" style="margin-top: 10px;">Оформить заказ</a>
+                        <a class="btn-primary btn btn-block text-uppercase" href="/zapis-online" style="margin-top: 10px;">Онлайн-заявка</a>
                     </div>
                 </div>
             </div>

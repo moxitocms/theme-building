@@ -60,17 +60,17 @@ use yii\web\View;
             </ul>
             <ul class="additional-list wsmenu-list visible-xs visible-sm">
                 <li>
-                    <a class="additional-list__link additional-list__link_phone" href="tel:+74212460400">
-                        8 (4212) 460-400
+                    <a class="additional-list__link additional-list__link_phone" href="tel:+74212242401">
+                        +7 (4212) 24-24-01
                     </a>
                 </li>
                 <li>
-                    <a class="additional-list__link additional-list__link_phone" href="tel:+74212324332">
-                        8 (4212) 324-332
+                    <a class="additional-list__link additional-list__link_phone" href="tel:+79141592401">
+                        +7 (914) 159-24-01
                     </a>
                 </li>
                 <li class="additional-list__togglemodal">
-                    <a class="btn btn-primary text-uppercase" href="/zapis-online">Записаться</a>
+                    <a class="btn btn-primary text-uppercase" href="/zapis-online">Онлайн-заявка</a>
                 </li>
             </ul>
         </nav>

@@ -51,8 +51,11 @@ $this->context->layout = '//front';
         </div>
     </div>
 </div>
-<div class="content-block">
+<div class="content-block content-block__online-request">
     <div class="container">
+        <div class="title-home text-center">
+            Бесплатный расчет стоимости проекта
+        </div>
         <?= LeadForm::widget([
             'key' => 'calculator',
             'mode' => LeadForm::MODE_INLINE,

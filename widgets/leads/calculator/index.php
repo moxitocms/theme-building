@@ -8,11 +8,7 @@ use yii\widgets\ActiveForm;
 /* @var $this View */
 /* @var $model LeadCalculator */
 /* @var $key string */
-?>
-<div class="title-home text-center">
-    БЕСПЛАТНЫЙ РАСЧЕТ СТОИМОСТИ ПРОЕКТА
-</div>
-<?php $form = ActiveForm::begin([
+?><?php $form = ActiveForm::begin([
     'id' => 'lead-call-me-form',
     'action' => ['/leads/default/save', 'key' => $key],
     'options' => [
@@ -67,27 +63,20 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
     <div class="col-md-6">
-        <ul>
-            <li>Опишите максимально подробно ваши пожелания по выбранным услугам.</li>
-            <br>
-            <li>Укажите размеры, этажность и предназначение будущей постройки.</li>
-            <br>
-            <li>Сообщите о наличии перепадов высот на участке и прочую информацию, которую посчитаете важной для
-                корректного расчета вашей заявки.
-            </li>
-            <br>
-        </ul>
+        <p>Опишите максимально подробно ваши пожелания по выбранным услугам.</p>
+        <p>Укажите размеры, этажность и предназначение будущей постройки.</p>
+        <p>Сообщите о наличии перепадов высот на участке и прочую информацию, которую посчитаете важной для корректного расчета вашей заявки.</p>
         <?= $form->field($model, 'description')->textarea([
-            'rows' => 5,
+            'rows' => 4,
             'placeholder' => $model->getAttributeLabel('description'),
         ]) ?>
     </div>
 </div>
 <div class="text-center">
-    <?= Html::submitButton(Html::tag('span', 'Отправить', [
+    <?= Html::submitButton(Html::tag('span', '<i class="fa fa-check"></i> &nbsp;Отправить заявку', [
         'class' => 'ladda-label',
     ]), [
-        'class' => 'btn btn-success ladda-button',
+        'class' => 'btn btn-success btn-lg ladda-button',
         'data' => [
             'style' => 'zoom-in'
         ],
