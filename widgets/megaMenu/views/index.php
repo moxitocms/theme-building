@@ -36,40 +36,10 @@ use yii\web\View;
                         Цены
                     </a>
                 </li>
-                <?php
-                $okompaniiIsActive = preg_match('/^o-kompanii/', Yii::$app->request->pathInfo);
-                $sotrudnikiIsActive = preg_match('/^o-kompanii\/nashi-sotrudniki/', Yii::$app->request->pathInfo);
-                $docsIsActive = preg_match('/^o-kompanii\/dokumenty/', Yii::$app->request->pathInfo);
-                ?>
-                <li class="<?= $okompaniiIsActive || $sotrudnikiIsActive ? 'active' : '' ?>">
+                <li class="<?= preg_match('/^o-kompanii/', Yii::$app->request->pathInfo) ? 'active' : '' ?>">
                     <a class="navtext" href="<?= Url::to(['/o-kompanii']) ?>">
                         О нас
                     </a>
-                    <ul class="sub-menu">
-                        <li class="<?= $sotrudnikiIsActive ? 'active' : '' ?>">
-                            <a href="<?= Url::to(['/o-kompanii/nashi-sotrudniki']) ?>">Наша команда</a>
-                        </li>
-                        <li class="<?= $docsIsActive ? 'active' : '' ?>">
-                            <a class="navtext" href="<?= Url::to(['/o-kompanii/dokumenty']) ?>">Лицензии и сертификаты</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="<?= Yii::$app->request->pathInfo === 'specials' ? 'active' : '' ?>">
-                    <a class="navtext" href="<?= Url::to(['/specials']) ?>">                        
-                        Акции
-                    </a>
-                </li>
-                <?php
-                $reviewsIsActive = preg_match('/^reviews/', Yii::$app->request->pathInfo);
-                ?>
-                <li class="<?= $reviewsIsActive ? 'active' : '' ?>">
-                    <a class="navtext" href="<?= Url::to(['/reviews']) ?>">Отзывы</a>
-                </li>
-                <?php
-                $faqIsActive = preg_match('/^faq/', Yii::$app->request->pathInfo);
-                ?>
-                <li class="<?= $faqIsActive ? 'active' : '' ?>">
-                    <a class="navtext" href="<?= Url::to(['/faq']) ?>">Вопрос-ответ</a>
                 </li>
                 <li class="<?= Yii::$app->request->pathInfo === 'contacts' ? 'active' : '' ?>">
                     <a class="navtext" href="<?= Url::to(['/contacts']) ?>">
