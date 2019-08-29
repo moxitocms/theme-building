@@ -18,7 +18,7 @@ use yii\web\View;
                 <div class="col-md-3">
                     <div class="footer-menu">
                         <div class="footer-menu__title" data-toggle="collapse" data-target="#fm1">
-                            РАЗДЕЛЫ
+                            Проекты
                             <div class="icon">
                                 <img src="/images/svg/chevron.svg" alt="">
                             </div>
@@ -33,7 +33,7 @@ use yii\web\View;
                 <div class="col-md-3">
                     <div class="footer-menu">
                         <div class="footer-menu__title" data-toggle="collapse" data-target="#fm2">
-                            НАШИ УСЛУГИ
+                            Наши услуги
                             <div class="icon">
                                 <img src="/images/svg/chevron.svg" alt="">
                             </div>
@@ -48,7 +48,7 @@ use yii\web\View;
                 <div class="col-md-3">
                     <div class="footer-menu">
                         <div class="footer-menu__title" data-toggle="collapse" data-target="#fm3">
-                            РЕЖИМ РАБОТЫ
+                            Информация
                             <div class="icon">
                                 <img src="/images/svg/chevron.svg" alt="">
                             </div>
@@ -63,7 +63,7 @@ use yii\web\View;
                 <div class="col-md-3">
                     <div class="footer-menu">
                         <div class="footer-menu__title" data-toggle="collapse" data-target="#fm4">
-                            КОНТАКТЫ
+                            Контакты
                             <div class="icon">
                                 <img src="/images/svg/chevron.svg" alt="">
                             </div>

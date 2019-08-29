@@ -27,17 +27,9 @@ $this->params['breadcrumbs'][] = $this->title;
 		        </li>
 		    <?php endforeach; ?>
 		</ul>
-		<div class="h2">Статьи</div>
-		<ul>
-		    <?php foreach ($links2 as $link) : ?>
-		        <li style="margin-top: 5px;">
-		            <?= Html::a($link['anchor'], $link['url']) ?>
-		        </li>
-		    <?php endforeach; ?>
-		</ul>
 	</div>
 	<div class="col-md-4">
-		<div class="h2">Услуги</div>
+		<div class="h2">Проекты</div>
 		<ul>
 		    <?php foreach ($links3 as $link) : ?>
 		        <li style="margin-top: 5px;">
@@ -47,9 +39,9 @@ $this->params['breadcrumbs'][] = $this->title;
 		</ul>
 	</div>
 	<div class="col-md-4">
-		<div class="h2">Акции и скидки</div>
+		<div class="h2">Услуги</div>
 		<ul>
-		    <?php foreach ($links4 as $link) : ?>
+		    <?php foreach ($links2 as $link) : ?>
 		        <li style="margin-top: 5px;">
 		            <?= Html::a($link['anchor'], $link['url']) ?>
 		        </li>

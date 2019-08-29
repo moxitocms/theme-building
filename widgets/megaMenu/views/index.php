@@ -31,15 +31,53 @@ use yii\web\View;
                     ]) ?>
                     <?php $this->endCache(); endif; ?>
                 </li>
+                <li class="<?= preg_match('/^o-nas$/', Yii::$app->request->pathInfo) ? 'active' : '' ?>">
+                    <a class="navtext" href="<?= Url::to(['/o-nas']) ?>">
+                        О компании
+                    </a>
+                </li>
                 <li class="<?= preg_match('/^tseny/', Yii::$app->request->pathInfo) ? 'active' : '' ?>">
                     <a class="navtext" href="<?= Url::to(['/tseny']) ?>">
                         Цены
                     </a>
                 </li>
-                <li class="<?= preg_match('/^o-kompanii/', Yii::$app->request->pathInfo) ? 'active' : '' ?>">
-                    <a class="navtext" href="<?= Url::to(['/o-kompanii']) ?>">
-                        О нас
+                <li class="<?= preg_match('/^(technology|stroitelstvo-karkasnyh-domov|svayno-vintovoy-fundament)$/', Yii::$app->request->pathInfo) ? 'active' : '' ?>">
+                    <a class="navtext" href="<?= Url::to(['/technology']) ?>">
+                        Технологии
                     </a>
+                    <ul class="sub-menu">
+                        <li class="">
+                            <a href="/stroitelstvo-karkasnyh-domov">Каркасное строительство</a>
+                        </li>
+                        <li class="">
+                            <a href="/svayno-vintovoy-fundament">Свайно-винтовой фундамент</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="<?= preg_match('/^(uslugi|proektirovanie|montazh-fundamenta|obvyazka-vintovyh-svay|sborka-silovogo-karkasa|uteplenie-doma|vneshnyaya-otdelka-doma)$/', Yii::$app->request->pathInfo) ? 'active' : '' ?>">
+                    <a class="navtext" href="<?= Url::to(['/uslugi']) ?>">
+                        Услуги
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="">
+                            <a href="/proektirovanie">Проектирование</a>
+                        </li>
+                        <li class="">
+                            <a href="/montazh-fundamenta">Монтаж фундамента</a>
+                        </li>
+                        <li class="">
+                            <a href="/obvyazka-vintovyh-svay">Обвязка винтовых свай</a>
+                        </li>
+                        <li class="">
+                            <a href="/sborka-silovogo-karkasa">Сборка силового каркаса</a>
+                        </li>
+                        <li class="">
+                            <a href="/uteplenie-doma">Утепление дома</a>
+                        </li>
+                        <li class="">
+                            <a href="/vneshnyaya-otdelka-doma">Внешняя отделка дома</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="<?= Yii::$app->request->pathInfo === 'contacts' ? 'active' : '' ?>">
                     <a class="navtext" href="<?= Url::to(['/contacts']) ?>">
