@@ -524,9 +524,8 @@ a.desc:after {
 
 .nav.nav-tabs {
     border-bottom: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 .nav.nav-tabs li {
